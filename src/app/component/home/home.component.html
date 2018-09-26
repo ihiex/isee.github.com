@@ -1,0 +1,157 @@
+<div class="container-fluid">
+  <div class="home-container-planform">
+    <div class="planform w1200">
+      <div class="starter-template">
+        <h1>iSee4.0智能管理云平台</h1>
+        <p class="lead">矢志成为世界最优的注塑机云数据解方案供应商之一</p>
+        <!-- <a class="mainColor" href="/register">立即体验</a> -->
+        <button class="mainColor" (click)="goRegister()">立即体验</button>
+      </div>
+    </div>
+  </div>
+  <div class="home-container-about-iSee" id="homeAbout_iSee">
+    <div class="about-iSee w1200">
+      <h2>关于<span class="iSee-color">iSee</span></h2>
+      <p id="homeAbout_iSee_title">全称为：iSee4.0智能管理云平台，是CML集团自主研发的计算机软件系统</p>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <img src="../../../assets/images/关于iSee.png" alt="">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
+          <p>荣获“香港工商业奖——机器及机械工具设计优异证书”，国家计算机软件著作权；</p>
+          <p>主要功能是收集、分析和监控注塑机数据，从而让经营决策者能随时随地系统全面而又方便地了解注塑机状态，制定精准的生产计划和公司策略。</p>
+          <p>不仅仅只是注塑机，而是适用任何开放接口的机器！！！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-container-main-module">
+    <div class="main-module w1200">
+      <h2><span class="iSee-color">iSee</span>主要功能模块</h2>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="main-module-box clear-margin-top border-animate">
+            <img src="../../../assets/images/设备总览.png" alt="">
+            <h3>设备总览</h3>
+            <p>显示所有机器：名称、状态、生产进度、设备利用率等重要参数，用户能清晰了解生产进度，安排生产计划。<br> <br> </p>
+          </div>
+          <div class="main-module-box clear-margin-top border-animate">
+            <img src="../../../assets/images/车间看板.png" alt="">
+            <h3>车间看板</h3>
+            <p>4种功能看板分别为：车间看板、报警看板、上料看板、维修看板。能一目了然地看到各机器的位置和状态，让工作人员能第一时间处理。</p>
+          </div>
+          <div class="main-module-box clear-margin-top border-animate">
+            <img src="../../../assets/images/生产分析.png" alt="">
+            <h3>生产分析</h3>
+            <p>显示所有机器：名称、状态、工单、模具、产品名称、目标量、完成率、预计完成日期、设备利用率等详细参数，让用户更全面地掌控全局。</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+          <div class="main-module-box border-animate">
+            <img src="../../../assets/images/排产管理.png" alt="">
+            <h3>排产管理</h3>
+            <p>包含：工单导入、工单排产、工单查询。按模板上传工单文档，智能排产，降低生产成本，高效运行机器，提高企业效益。</p>
+          </div>
+          <div class="main-module-box border-animate">
+            <img src="../../../assets/images/分析报表.png" alt="">
+            <h3>分析报表</h3>
+            <p>包含：设备SPC比较报表、设备能耗分析报表。专业细致的数据分析，可了解不同机器间相同参数的差异化，从而改善工艺，提高效率。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-container-iSee-app">
+    <div class="iSee-app w1200">
+      <h2><span class="iSee-color">iSee</span>手机app</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 row">
+          <div class="iSee-app-box col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div (mouseenter)="enterFun('animateImg1')" (mouseleave)="leaveFun('animateImg1')">
+                <img id="animateImg1" src="../../../assets/images/上班.png" alt="">
+                <h4>上班</h4>
+                <p>员工扫描二维码进行上班登记，记录上班时间，产量，不良品数量。可以一人负责一台机器，也可以一人负责多台机器，灵活操作。</p>
+            </div>
+          </div>
+          <div class="iSee-app-box col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div (mouseleave)="leaveFun('animateImg2')" (mouseenter)="enterFun('animateImg2')">
+                <img id="animateImg2" src="../../../assets/images/报障.png" alt="">
+                <h4>报障</h4>
+                <p>员工在生产过程中发现机器故障，可扫描二维码上报，故障通知会以消息模式通知到负责人，同时会显示在电视面板上。工作人员会收到消息提示，安排维修处理。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 row">
+          <div class="iSee-app-box col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div (mouseleave)="leaveFun('animateImg3')" (mouseenter)="enterFun('animateImg3')">
+                <img id="animateImg3" src="../../../assets/images/监控.png" alt="">
+                <h4>监控</h4>
+                <p>在手机端监控所有机器状态、产量、报警信息、订单详情等资料，用户无论何时何地都能用手机掌控全局，作出最佳决策。</p>
+            </div>
+          </div>
+          <div class="iSee-app-box col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div (mouseleave)="leaveFun('animateImg4')" (mouseenter)="enterFun('animateImg4')">
+                <img id="animateImg4" src="../../../assets/images/上料.png" alt="">
+                <h4>上料</h4>
+                <p>员工在生产过程中发现原材料不足，可扫描二维码上报，缺料通知会以消息模式通知到负责人，同时会显示在电视面板上。工作人员会收到消息提示，安排上料处理。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <img src="../../../assets/images/手机app.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-container-serve-superiority ">
+    <div id="homeServeSuperiority" class="serve-superiority w1200 row ">
+      <h2>服务与优势</h2>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <div>
+          <img src="../../../assets/images/服务与优势.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <div class="serve-superiority-box">
+          <p>
+            iSee4.0智能管理云平台使用云端服务器。只要一根网线，就能把机器连接上云端平台，极大节省了您前期搭建基础网络设施的成本和后期的维护成本。
+          </p>
+          <p>
+            <img src="../../../assets/images/tick.png" alt="">
+            <span>安全性：</span>
+            <span>云服务器能防止ARP攻击和MAC欺骗，定时备份，数据永久不丢失。</span>
+          </p>
+          <p>
+            <img src="../../../assets/images/tick.png" alt="">
+            <span>可靠性：</span>
+            <span>基于服务器集群，性能高，故障率极低。</span>
+          </p>
+          <p >
+            <span>
+              <img src="../../../assets/images/tick.png" alt="">
+             稳定性：<br><br>
+            </span>
+            <span>云服务器可以故障自动迁移，如果服务器出现故障，数据会自动迁移到其他云服务器上了，保证系统能正常使用。</span>
+          </p>
+          <p>
+            <img src="../../../assets/images/tick.png" alt="">
+            <span>智能化：</span>
+            <span>系统能监测到机器的状态及零部件使用情况，能及时作出警示。</span>
+          </p>
+          <p>
+            无论你身处何方，只要有网络，就能监控机器工作状态、生产进度，掌控全局，作出最佳决策。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-container-success-case">
+    <div class="success-case w1200">
+      <h2>成功案例</h2>
+      <img src="../../../assets/images/成功案例.png" alt="">
+    </div>
+  </div>
+</div>

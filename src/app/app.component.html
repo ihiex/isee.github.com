@@ -1,21 +1,96 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nav class="navbar">
+  <div class="header row w1200">
+    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 row">
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <img class="logo_img" src="../assets/images/iSee_logo.png" alt="">
+        </div>
+        <div class="col-xs-7 col-md-7 col-lg-7 col-sm-7 hidden-xs">
+            <ul class="head-content">
+                <li class="active" (click)="goHome()">产品介绍</li>
+                <li (click)="goRegister()">立即体验</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 hidden-xs ">
+          <ul class="right-content">
+            <li><span>中文</span><span>ENG</span></li>
+            <li><img src="../assets/images/电话.png" alt="">+86-769-2281 0389 </li>
+          </ul>
+    </div>
+  </div>
+</nav>
+
 
 <router-outlet></router-outlet>
+
+<footer class="footer">
+  <div class="footer-top ">
+    <div class="footer-top-content w1200 row">
+      <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+        <span>互联网+注塑机云数据解决方案</span>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+        <button class="mainColor" (click)="goRegister()">立即体验</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom ">
+      <div class="footer-bottom-content w1200">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3">
+            <div class="tal">
+                <h2>关于我们</h2>
+                <p>
+                  iSee4.0智能管理云平台是CML集团自主研发的注塑机智能监控系统。集团成立于1982年，为香港上市公司大同机械企业有限公司之全资附属公司。通过30多年持续发展，在中国华南及华东地区建立了机械设备生产基地，拥有覆盖全国及世界性的销售与服务网络。
+                </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+            <div class="tal">
+              <h2>联系我们</h2>
+              <ul class="tal">
+                <li>电话：+86-769-22810389 22810339</li>
+                <li>传真：+86-769-22412829 </li>
+                <li>邮箱：sales@cml.com.cn</li>
+                <li>地址：广东省东莞市东城区周屋工业区银珠路</li>
+              </ul>
+              <h2 class="h2_mark">集团成员</h2>
+              <ul class="jtcy clearfix">
+                <li>大同机械集团</li>
+                <li>东华机械</li>
+                <li>大同信息科技</li>
+                <li>德科摩</li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <div class="tal">
+              <h2>关注我们</h2>
+              <p>官方微信公众号</p>
+              <img src="../assets/images/公众号二维码.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3">
+            <div class="tal">
+                <h2>权威认证</h2>
+                <div class="fl">
+                  <p>香港工商业奖</p>
+                  <img src="../assets/images/香港工商业奖.png" alt="">
+                </div>
+                <div class="fr">
+                  <p>计算机软件著作权</p>
+                  <img src="../assets/images/计算机软件著作权.png" alt="">
+                </div>
+
+            </div>
+          </div>
+      </div>
+      <p class="beian tar">粤ICP备07045000号　&nbsp;&nbsp;&nbsp;　Copyright ©2017 &nbsp;&nbsp;　大同集团有限公司</p>
+    </div>
+  </div>
+
+</footer>
+
+
+

@@ -1,0 +1,216 @@
+
+
+.container-fluid{
+  padding: 0;
+  margin: 0;
+  max-width: 1920px;
+}
+.container-fluid h2{
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  padding: 55px 0;
+}
+.container-fluid .iSee-color{
+  color:#7dbf1d;
+}
+/* 智能管理云平台 */
+
+.home-container-planform{
+  width: 100%;
+  background-color: #3b4144;
+}
+.container-fluid .home-container-planform .planform{
+  padding-top: 100px;
+  height: 460px;
+  background: #3b4144 url("../../../assets/images/banner.jpg")  no-repeat center center;
+}
+
+.container-fluid .starter-template{
+  text-align: left;
+  color: #fff;
+  padding: 10px 0 0 0;
+  margin: 0 0 0 80px;
+}
+.container-fluid .starter-template h1{
+  font-size: 48px;
+  font-weight: bold;
+}
+.container-fluid .starter-template p{
+  font-size: 20px;
+}
+.container-fluid .starter-template button{
+  font-size: 24px;
+  width: 180px;
+  height: 46px;
+  line-height: 46px;
+  border: none;
+  border-radius: 23px;
+  margin-top: 65px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 2s;
+}
+.container-fluid .starter-template button:hover{
+  opacity: 0.7;
+}
+/* 关于iSee */
+.container-fluid .home-container-about-iSee .about-iSee{
+  height: 600px;
+}
+.container-fluid .home-container-about-iSee .about-iSee>p{
+  font-size: 24px;
+}
+.container-fluid .home-container-about-iSee .about-iSee>div p{
+  text-align: left;
+  font-size: 16px;
+  margin: 36px 0;
+}
+.container-fluid .home-container-about-iSee .about-iSee>div p:first-child{
+  padding-top: 40px;
+}
+
+/* iSe主要功能模块y */
+.container-fluid .home-container-main-module{
+  max-width: 1920px;
+  background-color: #f7f7f7;
+}
+.container-fluid .home-container-main-module .main-module{
+  height: 980px;
+}
+.container-fluid .home-container-main-module .main-module .main-module-box{
+  width: 310px;
+  height: 340px;
+  border: solid 2px #aaa;
+  margin: 34px;
+  padding: 40px 30px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+.container-fluid .home-container-main-module .main-module .main-module-box p{
+  text-align: left;
+  transition: all 1s;
+}
+.container-fluid .home-container-main-module .main-module .main-module-box h3{
+  font-weight: bold;
+  padding: 21px 0;
+  font-size: 20px;
+}
+.container-fluid .home-container-main-module .main-module .clear-margin-top{
+  margin-top: 0;
+}
+/* 盒子动画部分 */
+.border-animate::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -2px;
+  z-index: 5;
+  border-style: solid;
+  border-color: #35c537;
+  border-width: 0 2px 0 2px;
+  border-radius: 3px;
+  height: 0;
+  width: 100%;
+  box-sizing: content-box;
+  transition: all .5s;
+}
+.border-animate::after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  z-index: 5;
+  border-style: solid;
+  border-color: #35c537;
+  border-width: 2px 0 2px 0;
+  border-radius: 3px;
+  height: 100%;
+  width: 0;
+  box-sizing: content-box;
+  transition: all .5s;
+}
+
+.main-module-box:hover.border-animate::before{
+  height: 100%;
+}
+.main-module-box:hover.border-animate::after{
+  width: 100%;
+}
+.main-module-box:hover p{
+  color: #35c537;
+}
+
+/* 关于iSee手机app */
+.container-fluid .home-container-iSee-app .iSee-app{
+  height: 600px;
+}
+.container-fluid .home-container-iSee-app .iSee-app .iSee-app-box{
+  position: relative;
+  text-align: left;
+  margin-left: 80px;
+}
+.container-fluid .home-container-iSee-app .iSee-app .iSee-app-box img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container-fluid .home-container-iSee-app .iSee-app .iSee-app-box h4{
+  font-size: 24px;
+  font-weight: bold;
+  padding-left:60px;
+}
+.container-fluid .home-container-iSee-app .iSee-app .iSee-app-box p{
+
+  padding: 10px 60px;
+}
+.container-fluid .home-container-iSee-app .iSee-app>div>div:last-child img{
+  margin-left: 60px;
+}
+
+/* 服务与优势 */
+.container-fluid .home-container-serve-superiority{
+  background-color: #f7f7f7;
+}
+.container-fluid .home-container-serve-superiority .serve-superiority{
+  height: 600px;
+}
+.container-fluid .home-container-serve-superiority .serve-superiority h2{
+  /* margin: 0;
+  padding: 0px; */
+  position: relative;
+  left: 80px;
+}
+.container-fluid .home-container-serve-superiority .serve-superiority-box:last-child img{
+  padding-right: 8px;
+}
+.container-fluid .home-container-serve-superiority .serve-superiority-box p{
+  text-align: left;
+  padding: 0 0 20px 0;
+}
+.container-fluid .home-container-serve-superiority .serve-superiority-box p:nth-child(4) span{
+  display: inline-block;
+}
+.container-fluid .home-container-serve-superiority .serve-superiority-box p:nth-child(4) span:last-child{
+  width: 485px;
+}
+
+.container-fluid .home-container-serve-superiority .serve-superiority-box div{
+  text-align: left;
+}
+
+/* 成功案例 */
+.container-fluid .home-container-success-case .success-case{
+  height: 580px;
+}
+
+
+
+
+
+
+
+

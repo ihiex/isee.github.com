@@ -1,0 +1,88 @@
+
+.container-fluid{
+  background-color: #f0f0f0;
+}
+
+.container-fluid .register-content{
+  height: 970px;
+  background-color: #fff;
+}
+.container-fluid .register-content .register-content-box{
+  padding: 72px 144px 102px 72px;
+  text-align: left;
+}
+.container-fluid .register-content .register-content-box>div:first-child{
+  padding-bottom: 46px;
+}
+.container-fluid .register-content .register-content-box>div:last-child{
+padding-top: 120px;
+}
+.container-fluid .register-content .register-content-box h3{
+  height: 34px;
+  font-size: 34px;
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+}
+.container-fluid .register-content .register-content-box .microChapter{
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 34px;
+  color: #fff;
+  margin-right: 8px;
+  position: relative;
+  top: -4px;
+}
+.container-fluid .register-content .register-content-box .form-group span{
+  color: red;
+  padding-left: 3px;
+}
+.container-fluid .register-content .register-content-box .form-control{
+  width: 50%;
+  border-radius: 0;
+}
+
+.container-fluid .register-content .register-content-box .form-control:nth-child(3){
+  width: 25px;
+}
+
+.container-fluid .register-content .register-content-box .registerBtn{
+  width: 228px;
+  height: 40px;
+  border: 0;
+  color: #fff;
+  font-size: 18px;
+}
+.container-fluid .register-content .register-content-box .verCode .registerBtn{
+  margin-left: 10px;
+  width: 120px;
+  font-size: 14px;
+}
+.container-fluid .register-content .register-content-box .verCode input,button{
+  height: 40px;
+  width: 231px;
+  display: inline-block;
+}
+.container-fluid .register-content .register-content-box .register-bottom hr{
+  margin-bottom: 46px;
+}
+.container-fluid .register-content .register-content-box .register-bottom div{
+  height: 40px;
+  line-height: 40px;
+  /* color: rgba(0, 0, 0, 0.3); */
+  opacity: 0.4;
+}
+
+#showWarn{
+  color: red;
+}
+
+
+
+
+
+

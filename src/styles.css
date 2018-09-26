@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  width: 100%;
+  font-family: 'Microsoft YaHei';
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.fl{
+  float: left;
+  }
+  .fr{
+    float: right;
+  }
+.clearfix:after{
+  content:".";/*加一段内容*/
+  display:block;/*让生成的元素以块级元素显示，占满剩余空间*/
+  height:0;/*避免生成的内容破坏原有布局高度*/
+  clear:both;/*清除浮动*/
+  visibility:hidden;/*让生成的内容不可见*/
+ }
+ .clearfix{zoom:1;/*为IE6，7的兼容性设置*/}
+
+ul li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+html,body,ul,li,a,img,div,span,table,th,thead,tbody,td,tr,p,i,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+.w1200{
+  width: 1200px;
+  margin: 0 auto;
+}
+html{
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+}
+.inline_block{
+  display: inline-block;
+}
+.tal{
+  text-align: left;
+}
+.tar{
+  text-align: right;
+}
+.tac{
+  text-align: center;
+}
+.inline{
+  display: inline;
+}
+.mainColor{
+background-color: #7dbf1d;
+}

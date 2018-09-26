@@ -1,0 +1,48 @@
+<div class="container-fluid">
+    <div class="register-content w1200">
+      <div class="register-content-box">
+        <div>
+          <span class="mainColor microChapter">1</span>
+          <h3>注册iSee账号</h3>
+          <hr>
+        </div>
+        <div>
+            <div class="form-group">
+              <label for="cell-phoneNumber">手机号<span>*</span></label>
+              <input type="tel" class="form-control" id="cell-phoneNumber" placeholder="手机号" [(ngModel)]="phone">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">密码<span>*</span></label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码" [(ngModel)]="psw">
+            </div>
+            <div class="form-group verCode">
+              <label for="verificationCode">验证码<span>*</span></label> <br>
+              <input type="text"  id="verificationCode" class="form-control" placeholder="验证码" [(ngModel)]="verCode">
+              <button id="verCodeBtn" class="mainColor registerBtn" (click)="getVerificationCode()">获取验证码</button>
+            </div>
+            <div class="form-group">
+              <label for="inputLinkman">联系人</label>
+              <input type="text" id="inputLinkman" class="form-control" placeholder="联系人" [(ngModel)]="linkMan">
+            </div>
+            <div class="form-group">
+              <span id="showWarn">{{message}}</span>
+            </div>
+            <button type="button" class="mainColor registerBtn" (click)="nextFun()">下一步</button>
+        </div>
+        <div class="register-bottom">
+          <span class="mainColor microChapter">2</span>
+          <h3>登录已有iSee账号</h3>
+          <hr>
+          <div>已注册用户可直接前往体验</div>
+          <button class="mainColor registerBtn">前往体验</button>
+          <div (click)="goChangePasswords()">忘记密码</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 引入login组件 -->
+<!-- <app-login></app-login> -->
+
+
+
